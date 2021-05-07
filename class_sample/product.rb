@@ -16,4 +16,14 @@ class Product
     # インスタンス変数
     @name
   end
+
+  def hello
+    'Hello'
+  end
+
+  alias greeting hello
 end
+
+user = Product.new
+user.hello
+user.greeting
